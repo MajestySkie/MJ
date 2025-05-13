@@ -1,14 +1,14 @@
 const express = require('express');
-const server = express();
+const app = express();
 
-server.all('/', (req, res) => {
-  res.send('Bot online');
+app.get('/', (req, res) => {
+  res.send('Bot is alive!');
 });
 
 function keepAlive() {
-  const port = process.env.PORT || 3000;
-  server.listen(port, () => {
-    console.log("Server is Ready!! " + Date.now());
+  const port = process.env.PORT || 8080;
+  app.listen(port, () => {
+    console.log(`Server is ready and listening on port ${port}`);
   });
 }
 

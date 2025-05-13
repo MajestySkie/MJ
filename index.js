@@ -28,7 +28,7 @@ client.on('messageCreate', (message) => {
     content.includes("thank you") ||
     content.includes("ty")
   ) {
-    message.reply("Glad to help, need more help? tags <#137063323177425725> <#1370638634653085305>");
+    message.reply("Glad to help, need more help? tags <#&1370633231774257254> <#&1370638346530853005>");
   }
 });
 

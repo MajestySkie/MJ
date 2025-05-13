@@ -1,4 +1,3 @@
-require('dotenv').config();
 const keepAlive = require('./server.js');
 keepAlive();
 
@@ -33,4 +32,3 @@ client.on('messageCreate', (message) => {
 });
 
 client.login(process.env.TOKEN);
-

@@ -22,12 +22,6 @@ client.on('messageCreate', (message) => {
 
   if (content.includes("tag") || content.includes("tags")) {
     message.reply("you can find it here (https://nelly.tools/tags)");
-  } else if (
-    content.includes("thanks") ||
-    content.includes("thank you") ||
-    content.includes("ty")
-  ) {
-    message.reply("Glad to help, need more help? tags <@&1370633231774257254> <@&1370638346530853005>");
   }
 });
 

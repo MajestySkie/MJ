@@ -6,6 +6,10 @@ module.exports = {
     .setDescription('Dapatkan link tag Nelly'),
 
   async execute(interaction) {
-    await interaction.reply('you can find it here (https://nelly.tools/tags)');
+    try {
+      await interaction.reply('you can find it here (https://nelly.tools/tags)');
+    } catch (error) {
+      console.error('Gagal membalas slash command:', error);
+    }
   },
-}
+};
